@@ -1,4 +1,4 @@
-# Numerical Simulation of the Schrodinger Equation
+# Numerical Solver for the Schrodinger Equation
 
 This projects implements a Crank-Nicolson and Gauss-Seidel based numerical solver for the one- and two-dimensional Schrodinger Equation.
 
