@@ -1,6 +1,6 @@
 # Numerical Solver for the Schrodinger Equation
 
-This projects implements a Crank-Nicolson and Gauss-Seidel based numerical solver for the one- and two-dimensional Schrodinger Equation.
+This project implements a Crank-Nicolson and Gauss-Seidel based numerical solver for the one- and two-dimensional Schrodinger Equation.
 
 The project was written within a two-week time span as part of a high school internship in Prof. Dr. Roser Valenti's research group at
 the University of Frankfurt.
