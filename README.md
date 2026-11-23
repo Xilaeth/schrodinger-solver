@@ -1,35 +1,38 @@
-# Numerical Solver for the Schrodinger Equation
+# Numerical Solver for the Schrödinger Equation
 
-This project implements a Crank-Nicolson and Gauss-Seidel based numerical solver for the one- and two-dimensional Schrodinger Equation.
+C++ and Python implementation of a Crank–Nicolson and Gauss–Seidel numerical solver for the one- and two-dimensional time-dependent Schrödinger equation.
 
-The project was written within a two-week time span as part of a high school internship in Prof. Dr. Roser Valenti's research group at
-the University of Frankfurt.
+Developed over a two-week period during a high-school internship in Prof. Dr. Roser Valentí's research group at Goethe University Frankfurt (June 2023), exploring scenarios such as double-slit interference and Anderson localization. A short write-up from 2023 is included in `Numerical solution of the Schrödinger equation.pdf`.
 
-A short write-up from 2023 can be found in the `Numerical solution of the Schrödinger equation.pdf` file.
+> **Status:** Archived project — cleaned up for reference.
 
-> **Status:** Archived personal project - cleaned up for reference
+<p align="center">
+  <img src="preview-1.png" alt="Wavepacket snapshot after traversing a double slit" width="45%" />
+    
+  <img src="preview-2.png" alt="Intensity slice at a wall behind the double slit" width="45%" />
+  <br />
+  <em><strong>Left:</strong> Wavepacket snapshot after traversing the double slit. <strong>Right:</strong> Intensity slice along a wall behind the double slit.</em>
+</p>
 
 ## Features
-- Includes C++ code for numerically solving the two dimensional Schrodinger Equation
-- Includes Python code for visualizing the system dynamics
+
+- C++ numerical solver implementing Crank–Nicolson and Gauss–Seidel methods for the 1D/2D Schrödinger equation
+- Python scripts for visualizing wavepacket dynamics and generating animations
+- Helper shell scripts (`run.sh`, `make-vid.sh`) to streamline execution and video encoding
 
 ## Prerequisites
 
-Originally written 3+ years ago without strict pinned version numbers. 
+Originally written without strict pinned version numbers.
 
-- **Python:** 3.8+ 
-- **C++:** C++14 or C++17 compatible compiler (e.g. `g++` or `clang`)
-- **FFMPEG:** Required for video handling (exact version not pinned but any modern version should generally work)
-- **Libraries:**
-    - **Eigen** (C++ linear algebra header library)
-    - **matplotlib** (Python plotting)
-    - **vispy** (Python interactive visualization)
+- **C++:** C++14 or C++17 compatible compiler (e.g., `g++` or `clang`) with the **Eigen** header library
+- **Python:** 3.8+ with `matplotlib` and `vispy`
+- **FFmpeg:** Required for rendering `.mp4` animations from frames
 
 ## Getting Started
 
-The code for the different implementation steps of the projects can be found in the `code/` folders.
+1. Inspect and run the simulation workflow in `code/` using `run.sh`, or compile the C++ solver directly against `Eigen` and run the Python visualization scripts.
+2. Render an `.mp4` animation from the output frames using `make-vid.sh` (requires `ffmpeg`).
 
-To run the simulation you can either use the shell-script `run.sh` or compile the C++ code using Eigen manually and visualize it using one
-of the Python files. Finally, the visualization can be turned into an `.mp4` file using the `make-vid.sh` shell-script that uses FFMPEG.
+## License
 
-Licensed unter the MIT License.
+Licensed under the MIT License.
